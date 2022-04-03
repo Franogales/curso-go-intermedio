@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Money {
+    string currency = 0;
+    int integral_amount = 1;
+    int decimal_amount=2;
+}
