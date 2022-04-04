@@ -7,5 +7,5 @@ message DayOfWeek {
         WENDSDAY =2; 
         THURSDAY = 3;
     }
-    daysOfWeek day = 0;
+    daysOfWeek day = 1;
 }

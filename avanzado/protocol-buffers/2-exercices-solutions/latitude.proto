@@ -1,6 +1,6 @@
 syntax = "proto3";
 
 message Latitude {
-    float latitude = 0;
-    float longitude =1;
+    double latitude = 1;
+    double longitude =2;
 }
