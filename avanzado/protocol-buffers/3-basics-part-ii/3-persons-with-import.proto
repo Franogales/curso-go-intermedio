@@ -1,0 +1,31 @@
+syntax = "proto3";
+import "3-basics-part-ii/3-date.proto";
+
+/* Person is used to identify users across our system */
+message Person {
+    string name = 1;
+    string last_name =2;
+    int32 age = 3;
+    bytes picture = 4;
+    bool is_verified = 5;
+    float height =6 ;
+    repeated string phone_numbers =7;
+    enum EyeColour {
+        UNKNOWN_EYE_COLOR = 0;
+        EYE_GREEN =1;
+        BLUE = 2;
+        BROWN =3;
+    }
+    EyeColour eye_colour = 8;
+    Date birthday =9;
+
+    // defining the type address within Person
+    message Address {
+        string street_name =1;
+        string house_number =2;
+        string zip_code =3;
+        string city = 4 ;
+        string country = 5;
+    }
+    repeated Address addresses = 10
+}
