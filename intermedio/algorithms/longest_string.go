@@ -15,9 +15,9 @@ func main() {
 
 // here I use a function that use afor loop inside a for loop. I go I can iterate and redice it
 func getLongestString(word string) (response string) {
-	splited := strings.Split(word, "")
 	var tmp string
-	for _, letter := range splited {
+	for i := 0; i < len(word); i++ {
+		letter := word[i:]
 		if !strings.Contains(tmp, letter) {
 			tmp += letter
 			if len(tmp) > len(response) {
