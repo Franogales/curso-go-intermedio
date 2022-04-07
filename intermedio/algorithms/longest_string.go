@@ -8,11 +8,12 @@ import (
 // given an string, gets the biggest characters before it gets repeated
 
 func main() {
-	word := ""
+	word := "abcvcpow"
 	longest := getLongestString(word)
 	fmt.Println(longest)
 }
 
+// here I use a function that use afor loop inside a for loop. I go I can iterate and redice it
 func getLongestString(word string) (response string) {
 	splited := strings.Split(word, "")
 	var tmp string
